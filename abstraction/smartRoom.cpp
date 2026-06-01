@@ -98,6 +98,20 @@ public:
 
 int main()
 {
+
+    SmartDevice *bedroomAc = new smartAc("BedRoom Ac");
+
+    bedroomAc->turnOn();
+    smartAc *actualAc = dynamic_cast<smartAc *>(bedroomAc);
+
+    if (actualAc)
+    {
+        actualAc->setTemperature(22);
+    }
+    bedroomAc->deviceStatus();
+
+    delete bedroomAc;
+
     SmartDevice *livingRoomLight = new smartLight("Living room light");
 
     livingRoomLight->turnOn();
