@@ -4,22 +4,28 @@ using namespace std;
 class OuterClass {
 public:
     static int staticVar;
-    static const int val = 0;
+    static int val;   // removed const
 
     class innerClass {
     public:
         void display() {
-            cout << "Static variable : "
-                << OuterClass::staticVar << " "
-                << OuterClass::val << endl;
+            cout << "Before increment: "
+                 << OuterClass::staticVar << " "
+                 << OuterClass::val << endl;
+
+            OuterClass::val++;
+
+            cout << "After increment: "
+                 << OuterClass::staticVar << " "
+                 << OuterClass::val << endl;
         }
     };
 };
 
 int OuterClass::staticVar = 100;
+int OuterClass::val = 0;
 
 int main() {
-    // nested class does not required outer class object
     OuterClass::innerClass obj;
     obj.display();
 
