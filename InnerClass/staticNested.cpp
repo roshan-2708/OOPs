@@ -10,14 +10,14 @@ public:
     public:
         void display() {
             cout << "Before increment: "
-                 << OuterClass::staticVar << " "
-                 << OuterClass::val << endl;
+                << OuterClass::staticVar << " "
+                << OuterClass::val << endl;
 
             OuterClass::val++;
 
             cout << "After increment: "
-                 << OuterClass::staticVar << " "
-                 << OuterClass::val << endl;
+                << OuterClass::staticVar << " "
+                << OuterClass::val << endl;
         }
     };
 };
