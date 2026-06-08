@@ -1,6 +1,6 @@
-# 📚 Object-Oriented Programming in Java
+# 📚 Object-Oriented Programming in C++
 
-A comprehensive collection of OOP concepts implemented in Java — organized by topic with practical examples for each pillar of OOP.
+A comprehensive collection of OOP concepts implemented in C++ — organized by topic with practical examples for each pillar of OOP.
 
 ---
 
@@ -106,23 +106,23 @@ Modeling real-world relationships between objects.
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Java JDK 8 or higher
+- c++ 17 or higher
 - Any IDE (IntelliJ IDEA, Eclipse, VS Code)
 
 ### Run a file
 ```bash
 # Compile
-javac FileName.java
+mingw gcc FileName.cpp
 
 # Run
-java FileName
+cpp FileName
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ---
 
